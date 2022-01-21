@@ -1,7 +1,7 @@
 # AMHP Avaliação para Desenvolvedor
 ## Avaliação para desenvolvedor .NET da AMHP-DF
 
-Essa aplicação foi desenvolvida em .NET 6 com banco de dados sqlite, você pode usar plataforma Windows ou Linux para executar a avaliação, mas lembrando que os aprovados vão trabalhar em ambiente Windows.
+Essa aplicação foi desenvolvida em .NET 6 com banco de dados sqlite. O desenvolvedor poderá usar plataforma Windows ou Linux para executar a avaliação. Contudo, lembrar que o(s) aprovado(s) trabalhará(ão) em ambiente Windows.
 
 ## Orientações
 
@@ -16,7 +16,7 @@ Essa aplicação foi desenvolvida em .NET 6 com banco de dados sqlite, você pod
 
 . Após corrigir os erros o Desenvolvedor deve executar a aplicação e responder o teste teórico.
 
-. Ao final o Desenvolvedor deve efetuar o commit e fazer o pull request do seu branch.
+. Ao final o desenvolvedor deve efetuar o commit e fazer o pull request do seu branch.
 
 . Mesmo que não finalize o teste teórico, envie o código que corrigiu para avaliarmos seu desempenho.
 
