@@ -10,6 +10,7 @@ namespace AMHP.Avaliacao.Data
 
         public UsuarioRepository(AvaliacaoContext avaliacaoContext)
         {
+            // Alteração thiago reis
             _avaliacaoContext = avaliacaoContext;
         }
 
