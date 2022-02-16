@@ -1,3 +1,5 @@
+using AMHP.Avaliacao.Data;
+using AMHP.Avaliacao.Domain.Interfaces;
 using AMHP.Avaliacao.Site.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +9,8 @@ builder.Services.AddControllersWithViews();
 
 //Método de extensão para fazer o registro das interfaces e classes
 builder.Services.AddServices(builder.Configuration);
+
+builder.Services.AddScoped<IUsuarioRepository,UsuarioRepository>();
 
 var app = builder.Build();
 

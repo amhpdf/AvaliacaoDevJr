@@ -1,4 +1,6 @@
-﻿namespace AMHP.Avaliacao.Domain.Interfaces
+﻿using System;
+
+namespace AMHP.Avaliacao.Domain.Interfaces
 {
     public interface IUsuarioRepository : IDisposable
     {

@@ -1,4 +1,7 @@
-﻿namespace AMHP.Avaliacao.Domain
+﻿using System;
+using System.Collections.Generic;
+
+namespace AMHP.Avaliacao.Domain
 {
     public class Usuario
     {
@@ -20,10 +23,10 @@
             {
                 throw new Exception("Nome não informado");
             }
-
+            ;
             Nome = nome;
 
-            DataHora = DateTime.Now
+            DataHora = DateTime.Now;
 
             UsuarioPerguntaRespostas = new List<UsuarioPerguntaResposta>();
         }
