@@ -23,7 +23,7 @@
 
             Nome = nome;
 
-            DataHora = DateTime.Now
+            DataHora = DateTime.Now;
 
             UsuarioPerguntaRespostas = new List<UsuarioPerguntaResposta>();
         }

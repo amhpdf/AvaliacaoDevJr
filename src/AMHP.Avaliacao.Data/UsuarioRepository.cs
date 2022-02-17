@@ -13,7 +13,7 @@ namespace AMHP.Avaliacao.Data
             _avaliacaoContext = avaliacaoContext;
         }
 
-        public Usuario AdicionarUsuario(Usuario usuario)
+        public Usuario Adicionar(Usuario usuario)
         {
             _avaliacaoContext.Usuarios.Add(usuario);
 
