@@ -15,6 +15,7 @@ namespace AMHP.Avaliacao.Site.Controllers
             _usuarioRepository = usuarioRepository;
         }
 
+
         public IActionResult Index()
         {
             return View(new UsuarioAvaliacaoViewModel());

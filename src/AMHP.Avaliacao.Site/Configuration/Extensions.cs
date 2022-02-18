@@ -12,7 +12,7 @@ namespace AMHP.Avaliacao.Site.Configuration
             services.AddDbContext<AvaliacaoContext>(option => option.UseSqlite(configuration.GetConnectionString("Avaliacao")));
 
             //Registra injeção de dependência
-            //services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
         }
     }
 }
