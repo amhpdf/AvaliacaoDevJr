@@ -21,3 +21,5 @@ Essa aplicação foi desenvolvida em .NET 6 com banco de dados sqlite. O desenvo
 . Mesmo que não finalize o teste teórico, envie o código que corrigiu para avaliarmos seu desempenho.
 
 Boa Sorte!
+
+teste
