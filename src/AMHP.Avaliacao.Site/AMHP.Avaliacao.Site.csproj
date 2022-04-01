@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AMHP.Avaliacao.Data\AMHP.Avaliacao.Data.csproj" />
+    <ProjectReference Include="..\AMHP.Avaliacao.Domain\AMHP.Avaliacao.Domain.csproj" />
   </ItemGroup>
 
 </Project>

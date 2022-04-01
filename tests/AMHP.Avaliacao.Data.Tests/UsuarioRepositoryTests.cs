@@ -67,7 +67,7 @@ namespace AMHP.Avaliacao.Data.Tests
             var usuario = _repository.ObterPorId(domain.Id);
 
             //assert
-            Assert.Null(usuario);
+            Assert.NotNull(usuario);
             Assert.Equal(domain.Id, usuario.Id);
         }
     }

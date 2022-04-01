@@ -10,7 +10,7 @@ namespace AMHP.Avaliacao.Domain.Tests
         {
             //Arrange
             //Act
-            var usuario = new Usuario("Teste");
+            var usuario = new Usuario("Teste 1");//fix
 
             //Assert
             Assert.NotNull(usuario);

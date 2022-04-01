@@ -13,6 +13,13 @@ namespace AMHP.Avaliacao.Data
             _avaliacaoContext = avaliacaoContext;
         }
 
+        public Usuario Adicionar(Usuario usuario)
+        {
+            _avaliacaoContext.Usuarios.Add(usuario);
+            _avaliacaoContext.SaveChanges();
+            return usuario;
+        }
+
         public Usuario AdicionarUsuario(Usuario usuario)
         {
             _avaliacaoContext.Usuarios.Add(usuario);
@@ -28,6 +35,6 @@ namespace AMHP.Avaliacao.Data
             GC.SuppressFinalize(this);
         }
 
-        public Usuario ObterPorId(Guid id) => _avaliacaoContext.Usuarios.Find(id);
+        public Usuario? ObterPorId(Guid id) => _avaliacaoContext.Usuarios.Find(id);
     }
 }
