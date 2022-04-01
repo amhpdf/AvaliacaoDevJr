@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\tests\AMHP.Avaliacao.Data.Tests\AMHP.Avaliacao.Data.Tests.csproj" />
     <ProjectReference Include="..\AMHP.Avaliacao.Data\AMHP.Avaliacao.Data.csproj" />
     <ProjectReference Include="..\AMHP.Avaliacao.Domain\AMHP.Avaliacao.Domain.csproj" />
   </ItemGroup>

@@ -1,7 +1,10 @@
-﻿using AMHP.Avaliacao.Domain;
+﻿using AMHP.Avaliacao.Data;
+using AMHP.Avaliacao.Data.Context;
+using AMHP.Avaliacao.Domain;
 using AMHP.Avaliacao.Domain.Interfaces;
 using AMHP.Avaliacao.Site.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace AMHP.Avaliacao.Site.Controllers
@@ -9,10 +12,11 @@ namespace AMHP.Avaliacao.Site.Controllers
     public class HomeController : Controller
     {
         private readonly IUsuarioRepository _usuarioRepository;
-
-        public HomeController(IUsuarioRepository usuarioRepository)
+        private AvaliacaoContext context = new AvaliacaoContext(new DbContextOptions<AvaliacaoContext>());
+        public HomeController() //IUsuarioRepository usuarioRepository
         {
-            _usuarioRepository = usuarioRepository;
+            
+            _usuarioRepository = new UsuarioRepository(context);
         }
 
         public IActionResult Index()
